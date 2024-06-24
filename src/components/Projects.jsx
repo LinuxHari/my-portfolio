@@ -6,10 +6,10 @@ const Projects = () => {
     <section className="py-40 px-5 md:px-10 w-full md:w-auto space-y-14 text-white relative" id="projects">
       <h2 className="text-2xl sm:text-3xl lg:text-4xl">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full md:w-fit z-10 justify-center items-center">
-        {PROJECTS.map(({ name, description, image, url }, i) => (
+        {PROJECTS.map(({ name, description, image, url, className }, i) => (
           <figure
             key={name}
-            className="bg-gradient-to-r from-[#2c1f3e] to-[#190c2d] py-5 px-4 lg:px-8 flex items-center gap-x-4 md:w-80 lg:w-96 rounded-lg border-t-2 border-[#622bb6]"
+            className={`bg-gradient-to-r from-[#2c1f3e] to-[#190c2d] py-5 px-4 lg:px-8 flex items-center gap-x-4 md:w-80 lg:w-96 rounded-lg border-t-2 border-[#622bb6] ${className}`}
           >
             <img
               src={image}

@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className="text-white space-y-8 px-5 md:px-10 py-10">
+    <section className="text-white space-y-8 px-5 py-10">
       <h1 className="text-3xl">Contact</h1>
       <p>
         I am currently looking to join a{" "}

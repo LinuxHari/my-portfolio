@@ -19,24 +19,28 @@ export const PROJECTS = [
     description: "A food ordering app developed with 0Auth, CI/CD and more.",
     image: "./badge.png",
     url: "https://github.com/LinuxHari/MERN-grub-frontend/",
+    className: "md:hover:scale-105 hover:md:border-2 duration-500 md:hover:-translate-x-5 md:hover:-translate-y-5"
   },
   {
     name: "MERN Chat",
     description: "A chat app developed with websockets.",
     image: "./paper.png",
     url: "https://github.com/LinuxHari/MERN-Chat",
+    className: "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:translate-x-5 md:hover:-translate-y-5"
   },
   {
     name: "MERN AI Bot",
     description: "An AI chatbot developed with Chat-GPT API.",
     image: "./bulb.png",
     url: "https://github.com/LinuxHari/MERN-AI-Chatbot",
+    className: "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:-translate-x-5 md:hover:translate-y-5"
   },
   {
     name: "REACT Pizza Store",
     description: "A react and redux pizza store with third party API.",
     image: "./pin.png",
     url: "https://github.com/LinuxHari/react-redux-pizza-store",
+    className: "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:translate-x-5 md:hover:translate-y-5"
   },
 ];
 

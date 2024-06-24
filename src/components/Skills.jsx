@@ -11,7 +11,7 @@ const Skills = () => {
         </div>
        {
         SKILLS.map(({name, icon, description, className, isRounded}) => (
-          <div key={name} className={`px-4 py-2 shadow-2xl flex gap-x-2 items-center backdrop-blur-md border border-white/10 w-full mt-4 md:mt-0 md:w-80 md:absolute rounded-xl ${className}`}>
+          <div key={name} className={`px-4 py-2 shadow-2xl flex gap-x-2 items-center hover:md:bg-black/15 hover:border-white/25 hover:shadow-inner cursor-default backdrop-blur-md border border-white/10 w-full mt-4 md:mt-0 md:w-80 md:absolute rounded-xl ${className}`}>
             <img src={icon} alt="" className={`h-10 w-10 ${!isRounded?"bg-gray-800 rounded-full p-1.5 object-contain": ""}`} />
             <div className='space-y-1'>
             <h3 className='font-sans font-semibold'>{name}</h3>
