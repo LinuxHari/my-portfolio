@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section className="flex justify-center px-5 py-10">
+    <section className="flex justify-center px-5 py-32 min-h-screen" id="me">
       <div className="text-white py-16 xl:py-20 flex flex-col items-center gap-y-16 xl:gap-y-28">
         <div className="flex flex-col sm:flex-row justify-center gap-x-16">
           <div className="relative flex justify-center">
@@ -65,16 +65,16 @@ const Hero = () => {
         </div>
         <div className="space-y-8 md:space-y-14">
           <div className="space-y-2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl">
+            <h1 className="text-4xl md:text-5xl xl:text-6xl">
               I am a{" "}
               <TypeAnimation
                 sequence={[
                   "Software Engineer.",
-                  20000,
+                  4000,
                   "Secure coder.",
-                  1000,
+                  4000,
                   "UI designer.",
-                  1000,
+                  4000,
                 ]}
                 wrapper="span"
                 speed={10}
@@ -93,7 +93,7 @@ const Hero = () => {
               .
             </p>
           </div>
-          <div>
+          <div className="md:mr-24">
             <p className="leading-7 lg:leading-10 text-base lg:text-lg">
               A self-taught software engineer, functioning in industry for 8
               months now.

@@ -3,7 +3,7 @@ import { EDUCATION } from "../data";
 const Education = () => {
   return (
     <section>
-      <div className="flex flex-col items-center gap-y-12">
+      <div className="flex flex-col items-center gap-y-12 py-32">
       <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl w-4/5 lg:w-3/5">My Education</h1>
         <div className="grid grid-rows-3 sm:grid-rows-2 grid-cols-7 gap-y-6 w-4/5 lg:w-3/5">
           {EDUCATION.map(({ startDate, endDate, name, details, className }) => (
