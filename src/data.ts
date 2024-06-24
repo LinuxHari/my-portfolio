@@ -119,13 +119,13 @@ export const EDUCATION = [
     endDate: 2020,
     name: "RC Boys Higher Secondary School",
     details: "Completed my higher secondary education, focusing on Computer Science. Gave me a solid understanding of basic computer science concepts.",
-    className: "col-span-full sm:col-start-0 sm:col-span-3"
+    className: "col-span-full sm:col-start-0 sm:col-span-3 sm:translate-x-[14%]"
   },
   {
     startDate: 2020,
     endDate: 2023,
     name: "National College Trichy",
     details: "Earned Bachelor of Science in Computer Science, this degree equipped me with both theoretical knowledge and practical skills essential for the tech industry",
-    className: "col-span-full sm:col-start-5 sm:col-span-3"
+    className: "col-span-full sm:col-start-5 sm:col-span-3 sm:-translate-x-[14%]"
   },
 ];
