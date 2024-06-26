@@ -1,4 +1,3 @@
-// import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -11,16 +10,16 @@ function App() {
 
   const windowSize = window.innerWidth 
 
-  const speedProjs = windowSize < 768? -17: -10
+  const speedProjs = windowSize < 768? -17: 30
 
-  const speedSkills = windowSize < 768? 20: 10
+  const speedSkills = windowSize < 768? 20: 0
 
   return (
     <div className="min-h-screen bg-[#11071f] overflow-hidden">
       <Navbar />
       <div className="flex flex-col items-center">
         <ParallaxProvider className="md:w-[640px] lg:w-lg flex flex-col py-20 space-y-20 overflow-hidden">
-          <Parallax speed={10}>
+          <Parallax speed={-20}>
             <Hero />
           </Parallax>
           <Parallax speed={speedProjs}>
@@ -29,7 +28,7 @@ function App() {
           <Parallax speed={speedSkills}>
             <Skills />
           </Parallax>
-          <Parallax speed={-10}>
+          <Parallax speed={-20}>
             <Education />
           </Parallax>
           <Parallax speed={3}>
