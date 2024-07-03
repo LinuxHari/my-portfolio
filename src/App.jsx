@@ -32,7 +32,7 @@ function App() {
           <Parallax speed={-15}>
             <Education />
           </Parallax>
-          <Parallax speed={3}>
+          <Parallax speed={10}>
             <Contact />
           </Parallax>
         </ParallaxProvider>
