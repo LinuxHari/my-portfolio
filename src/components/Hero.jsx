@@ -1,8 +1,16 @@
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
+  const joined = new Date("10-09-2023");
+  const today = new Date();
+  const diffTime = Math.abs(today - joined);
+  const experience = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 30));
+
   return (
-    <section className="flex justify-center px-5 md:px-20 py-24 lg:py-32 min-h-screen" id="me">
+    <section
+      className="flex justify-center px-5 md:px-20 py-24 lg:py-32 min-h-screen"
+      id="me"
+    >
       <div className="text-white py-16 xl:py-20 flex flex-col items-center gap-y-16 xl:gap-y-28">
         <div className="flex flex-col sm:flex-row justify-center gap-x-16">
           <div className="relative flex justify-center">
@@ -24,16 +32,7 @@ const Hero = () => {
                 Hello! I am{" "}
                 <span className="text-[#804ab6] text-lg">
                   <TypeAnimation
-                    sequence={[
-                      "Hariharan",
-                      20000,
-                      // "a Software Engineer",
-                      // 1000,
-                      // "a Secure coder",
-                      // 1000,
-                      // "a UI designer",
-                      // 1000,
-                    ]}
+                    sequence={["Hariharan", 20000]}
                     wrapper="span"
                     speed={10}
                     repeat={Infinity}
@@ -95,8 +94,7 @@ const Hero = () => {
           </div>
           <div className="md:mr-24">
             <p className="leading-7 lg:leading-10 text-base lg:text-lg">
-              A self-taught software engineer, functioning in industry for 8
-              months now.
+              A self-taught software engineer, functioning in industry for {experience} months now.
               <br className="hidden md:block" />I make meaningful and delightful
               digital products that create an equilibrium{" "}
               <br className="hidden md:block" /> between user needs and business
