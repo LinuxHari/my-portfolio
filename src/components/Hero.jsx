@@ -65,7 +65,7 @@ const Hero = () => {
         </div>
         <div className="space-y-8 md:space-y-14 min-h-[50vh] md:min-h-fit">
           <div className="space-y-2">
-            <h1 className="text-4xl md:text-5xl xl:text-6xl h-24 sm:h-auto">
+            <h1 className="text-4xl md:text-5xl xl:text-6xl">
               I am a{" "}
               <TypeAnimation
                 sequence={[
