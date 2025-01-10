@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <section>
       <div className="flex flex-col items-center gap-y-12 py-32 px-5 md:px-10 md:w-[640px] lg:w-lg">
-      <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl self-start sm:ml-12">My Education</h1>
+      <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl self-start sm:ml-12">My Education</h2>
         <div className="grid grid-rows-3 sm:grid-rows-2 grid-cols-7 gap-y-6 md:gap-y-5 lg:gap-y-6">
           {EDUCATION.map(({ startDate, endDate, name, details, className }) => (
             <div className={`flex gap-6 shadow-purple rounded-xl md:hover:-translate-y-4 duration-500 ${className}`} key={name}>

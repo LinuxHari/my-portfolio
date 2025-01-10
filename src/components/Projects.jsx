@@ -25,6 +25,7 @@ const Projects = () => {
                 href={url}
                 target="_blank"
                 className="backdrop-blur-3xl bg-purple-100/20 border border-white/50 inline-block !mt-3 uppercase px-3 py-1 rounded-lg text-sm"
+                aria-label={name}
               >
                 View it
               </a>

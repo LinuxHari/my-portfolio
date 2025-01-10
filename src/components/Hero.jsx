@@ -42,7 +42,7 @@ const Hero = () => {
             </div>
             <div className="hidden sm:block space-y-3 text-lg xl:text-xl">
               <p className="underline">A Coder who</p>
-              <h2 className="text-4xl xl:text-5xl leading-snug">
+              <p className="text-4xl xl:text-5xl leading-snug">
                 Judges the code
                 <span className="block">
                   by its{" "}
@@ -51,11 +51,12 @@ const Hero = () => {
                     <img
                       src="./ellipse.png"
                       className="absolute -top-1 right-0 invert h-16 w-40 xl:h-24 xl:w-52 rotate-[150deg]"
+                      alt="ellipse"
                     />
                   </span>
                   ...
                 </span>
-              </h2>
+              </p>
               <p className="text-base">
                 Because if the code doesn&apos;t impress you, what can?
               </p>
@@ -86,6 +87,7 @@ const Hero = () => {
                 href="https://www.travelfika.com/"
                 className="text-blue-500 hover:underline"
                 target="_blank"
+                aria-label="travelfika"
               >
                 Travelfika
               </a>
