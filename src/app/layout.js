@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 import { canonical, description, title } from "@/data";
 
 const geistSans = Geist({
@@ -20,15 +19,22 @@ export const metadata = {
     canonical,
     openGraph: {
       title,
-      description
-    }
-  }
+      description,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head> 
+      <head>
+        <link rel="icon" type="image/svg+xml" href="logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+          rel="stylesheet"
+        />
         <meta
           name="twitter:title"
           content="Welcome to Linux Hari's Portfolio"
@@ -37,7 +43,7 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="Welcome to my portfolio! Here, you’ll find a collection of my work, skills, and projects I’ve poured my passion into. Whether it’s developing sleek, user-friendly applications, crafting efficient backend solutions, or bringing ideas to life through design, each project tells a story of growth and creativity."
         />
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
