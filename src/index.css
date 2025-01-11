@@ -20,3 +20,35 @@
 .shadow-purple {
   box-shadow: 1px 5px 15px -1px rgba(99, 7, 192, 0.7);
 }
+
+.rotation {
+  display: inline-block;
+  animation: rotateLogo 3s linear forwards;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg); 
+  }
+  10% {
+    transform: rotate(180deg); 
+  }
+  20% {
+    transform: rotate(540deg);
+  }
+  50% {
+    transform: rotate(3960deg);
+  }
+  80% {
+    transform: rotate(7200deg); 
+  }
+  90% {
+    transform: rotate(7920deg); 
+  }
+  100% {
+    transform: rotate(8280deg); 
+  }
+}
+
+
+

@@ -7,7 +7,7 @@ const Navbar = ({scroll}) => {
   return (
     <header className="flex justify-center bg-[#1a0b2e] md:bg-transparent md:backdrop-blur-md py-3 md:py-5 font-sans fixed top-0 z-10 w-full">
       <nav className="w-full px-4 md:px-10 md:w-[640px] lg:w-lg flex justify-between items-center">
-        <Logo className="h-8 w-8 object-cover md:h-10 md:w-10 p-1 border-2 border-white rounded-full"/>
+        <Logo className="rotation h-8 w-8 object-cover md:h-10 md:w-10 p-1 border-2 border-white rounded-full"/>
         <button
           className="text-white text-4xl md:hidden"
           onClick={() => setShowNav(true)}
