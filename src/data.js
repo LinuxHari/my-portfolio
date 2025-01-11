@@ -133,3 +133,9 @@ export const EDUCATION = [
     className: "col-span-full sm:col-start-5 sm:col-span-3 sm:-translate-x-[14%]"
   },
 ];
+
+export const title = "Welcome to Linux Hari's Portfolio"
+
+export const description = "Welcome to my portfolio! Here, you’ll find a collection of my work, skills, and projects I’ve poured my passion into. Whether it’s developing sleek, user-friendly applications, crafting efficient backend solutions, or bringing ideas to life through design, each project tells a story of growth and creativity."
+
+export const canonical = "https://linuxhari-portfolio.vercel.app"
