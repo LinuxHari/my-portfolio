@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
           rel="stylesheet"
         />
+        <meta name="robots" content="index, follow" />
         <meta
           name="twitter:title"
           content="Welcome to Linux Hari's Portfolio"
