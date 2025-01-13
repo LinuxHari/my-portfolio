@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="Welcome to my portfolio! Here, you’ll find a collection of my work, skills, and projects I’ve poured my passion into. Whether it’s developing sleek, user-friendly applications, crafting efficient backend solutions, or bringing ideas to life through design, each project tells a story of growth and creativity."
         />
+        <meta name="google-site-verification" content="-qPnSw8sGMOzoSSxCzsrOqABWVoI59XLVwjgN4wi95c" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
