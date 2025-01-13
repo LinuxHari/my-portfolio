@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { canonical, description, title } from "@/data";
-import logo from "../../public/logo.png"
+import { canonical, description, keywords, title } from "@/data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title,
   description,
+  keywords,
   alternates: {
     canonical,
     openGraph: {
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="logo.png" />
+        <link rel="icon" type="image/svg+xml" href="favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

@@ -134,8 +134,10 @@ export const EDUCATION = [
   },
 ];
 
-export const title = "Welcome to Linux Hari's Portfolio"
+export const title = "Linux Hari's Portfolio - Software Engineer & Web Developer | Backend Solutions & UX/UI Design"
 
-export const description = "Welcome to my portfolio! Here, you’ll find a collection of my work, skills, and projects I’ve poured my passion into. Whether it’s developing sleek, user-friendly applications, crafting efficient backend solutions, or bringing ideas to life through design, each project tells a story of growth and creativity."
+export const description = "Welcome to the portfolio of Linux Hari, a passionate Software Engineer and Web Developer. Here you'll find a collection of my projects that showcase my skills in building intuitive user experiences, creating solid backend solutions, and designing impactful applications. Whether you're looking for full-stack expertise or creative problem-solving, my work reflects my journey of growth and innovation."
 
 export const canonical = "https://linuxhari-portfolio.vercel.app"
+
+export const keywords = ["Hari portfolio", "Linux Hari portfolio", "Hariharan portfolio", "Software engineer", "Full stack engineer", "Javascript developer", "Personal website"]
