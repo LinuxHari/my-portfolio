@@ -27,7 +27,7 @@ const Navbar = () => {
        <NavLinks className="static bg-none top-0 hidden sm:inline-block"/>
       </nav>
     </header>
-    <NavLinks className={`fixed ${showBottomNav ? "top-[95vh] left-1/2": "top-[17px] -right-24"} sm:hidden duration-200 -translate-x-1/2 transform w-full z-max bg-[#11071f]`}/>
+    <NavLinks className={`fixed ${showBottomNav ? "top-[95vh] left-1/2 -translate-x-1/2": "top-[17px] right-5"} sm:hidden duration-200 transform z-max bg-[#11071f]`}/>
    </>
   );
 };
