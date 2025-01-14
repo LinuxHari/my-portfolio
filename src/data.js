@@ -19,28 +19,32 @@ export const PROJECTS = [
     description: "A food ordering app developed with 0Auth, CI/CD and more.",
     image: "./badge.png",
     url: "https://github.com/LinuxHari/MERN-grub-frontend/",
-    className: "md:hover:scale-105 hover:md:border-2 duration-500 md:hover:-translate-x-5 md:hover:-translate-y-5"
+    className:
+      "md:hover:scale-105 hover:md:border-2 duration-500 md:hover:-translate-x-5 md:hover:-translate-y-5",
   },
   {
     name: "MERN Chat",
     description: "A chat app developed with websockets.",
     image: "./paper.png",
     url: "https://github.com/LinuxHari/MERN-Chat",
-    className: "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:translate-x-5 md:hover:-translate-y-5"
+    className:
+      "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:translate-x-5 md:hover:-translate-y-5",
   },
   {
     name: "MERN AI Bot",
     description: "An AI chatbot developed with Chat-GPT API.",
     image: "./bulb.png",
     url: "https://github.com/LinuxHari/MERN-AI-Chatbot",
-    className: "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:-translate-x-5 md:hover:translate-y-5"
+    className:
+      "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:-translate-x-5 md:hover:translate-y-5",
   },
   {
     name: "REACT Pizza Store",
     description: "A react and redux pizza store with third party API.",
     image: "./pin.png",
     url: "https://github.com/LinuxHari/react-redux-pizza-store",
-    className: "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:translate-x-5 md:hover:translate-y-5"
+    className:
+      "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:translate-x-5 md:hover:translate-y-5",
   },
 ];
 
@@ -122,22 +126,43 @@ export const EDUCATION = [
     startDate: 2018,
     endDate: 2020,
     name: "RC Boys Higher Secondary School",
-    details: "Completed my higher secondary education, focusing on Computer Science. Gave me a solid understanding of basic computer science concepts.",
-    className: "col-span-full sm:col-start-0 sm:col-span-3 sm:translate-x-[14%]"
+    details:
+      "Completed my higher secondary education, focusing on Computer Science. Gave me a solid understanding of basic computer science concepts.",
+    className:
+      "col-span-full sm:col-start-0 sm:col-span-3 sm:translate-x-[14%]",
   },
   {
     startDate: 2020,
     endDate: 2023,
     name: "National College Trichy",
-    details: "Earned Bachelor of Science in Computer Science, this degree equipped me with both theoretical knowledge and practical skills essential for the tech industry.",
-    className: "col-span-full sm:col-start-5 sm:col-span-3 sm:-translate-x-[14%]"
+    details:
+      "Earned Bachelor of Science in Computer Science, this degree equipped me with both theoretical knowledge and practical skills essential for the tech industry.",
+    className:
+      "col-span-full sm:col-start-5 sm:col-span-3 sm:-translate-x-[14%]",
   },
 ];
 
-export const title = "Linux Hari's Portfolio - Software Engineer & Web Developer | Backend Solutions & UX/UI Design"
+export const title =
+  "Linux Hari's Portfolio - Software Engineer & Web Developer";
 
-export const description = "Welcome to the portfolio of Linux Hari, a passionate Software Engineer and Web Developer. Here you'll find a collection of my projects that showcase my skills in building intuitive user experiences, creating solid backend solutions, and designing impactful applications. Whether you're looking for full-stack expertise or creative problem-solving, my work reflects my journey of growth and innovation."
+export const description =
+  "Explore Linux Hari’s work as a Software Engineer and Web Developer, featuring projects in backend solutions, intuitive UX/UI, and full-stack development.";
 
-export const canonical = "https://linuxhari-portfolio.vercel.app"
+export const canonical = "https://linuxhari-portfolio.vercel.app";
 
-export const keywords = ["Hari portfolio", "Linux Hari portfolio", "Hariharan portfolio", "Software engineer", "Full stack engineer", "Javascript developer", "Personal website"]
+export const keywords = [
+  "Hari portfolio",
+  "Linux Hari portfolio",
+  "Hariharan portfolio",
+  "Software engineer",
+  "Full stack engineer",
+  "Javascript developer",
+  "Personal website",
+];
+
+export const profiles = [
+  "https://in.linkedin.com/in/hariharan-manohar-2957a1264",
+  "https://github.com/LinuxHari",
+];
+
+export const jobTitles = ["Software Engineer", "Web Developer", "Full Stack Engineer", "Full Stack Developer"]

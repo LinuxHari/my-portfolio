@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { canonical, description, keywords, title } from "@/data";
+import { canonical, description, jobTitles, keywords, profiles, title } from "@/data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,12 +16,13 @@ export const metadata = {
   title,
   description,
   keywords,
+  openGraph: {
+    title,
+    description,
+  },
+  robots: 'index, follow',
   alternates: {
     canonical,
-    openGraph: {
-      title,
-      description,
-    },
   },
 };
 
@@ -36,16 +37,34 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
           rel="stylesheet"
         />
-        <meta name="robots" content="index, follow" />
         <meta
           name="twitter:title"
-          content="Welcome to Linux Hari's Portfolio"
+          content={title}
         />
         <meta
           name="twitter:description"
-          content="Welcome to my portfolio! Here, you’ll find a collection of my work, skills, and projects I’ve poured my passion into. Whether it’s developing sleek, user-friendly applications, crafting efficient backend solutions, or bringing ideas to life through design, each project tells a story of growth and creativity."
+          content={description}
         />
         <meta name="google-site-verification" content="-qPnSw8sGMOzoSSxCzsrOqABWVoI59XLVwjgN4wi95c" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Hariharan",
+              "url": canonical,
+              "description": description,
+              "sameAs": profiles,
+              "jobTitle": jobTitles,
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Travelfika"
+              },
+              "keywords": keywords
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
