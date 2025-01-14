@@ -1,15 +1,22 @@
+import me from "../public/user.svg"
+import projects from "../public/folder.svg"
+import skills from "../public/skills.svg"
+
 export const NAV_LINKS = [
   {
     name: "Who am I?",
     url: "#me",
+    icon: me.src
   },
   {
     name: "Projects",
     url: "#projects",
+    icon: projects.src
   },
   {
     name: "Skills",
     url: "#skills",
+    icon: skills.src
   },
 ];
 
