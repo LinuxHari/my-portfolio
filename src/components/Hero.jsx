@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex justify-center px-5 md:px-20 py-24 lg:py-32 min-h-screen"
+      className="flex justify-center px-5 md:px-20 py-14 sm:py-24 lg:py-32 min-h-screen"
       id="me"
     >
       <div className="text-white py-16 xl:py-20 flex flex-col items-center gap-y-16 xl:gap-y-28">

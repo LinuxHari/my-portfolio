@@ -12,7 +12,7 @@ import Contact from "@/components/Contact";
 const Home = () => {
   const windowSize = globalThis.innerWidth;
 
-  const speedProjs = windowSize < 768 ? -25 : -15;
+  const speedProjs = windowSize < 768 ? -20 : -15;
 
   const speedSkills = windowSize < 768 ? 20 : 40;
 
