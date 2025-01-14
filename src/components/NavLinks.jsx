@@ -2,7 +2,7 @@ import { NAV_LINKS } from "@/data";
 
 const NavLinks = ({ className }) => {
   return (
-    <div className={`w-fit ${className} duration-500 z-50 rounded-full`}>
+    <div className={`w-fit ${className} z-50 rounded-full`}>
       <ul className="grid grid-cols-3 gap-y-0 p-0 border-2 border-white w-60 sm:w-[360px] lg:w-[450px] rounded-full overflow-hidden">
         {NAV_LINKS.map(({ name, url, icon }) => (
           <li
