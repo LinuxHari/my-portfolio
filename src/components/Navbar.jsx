@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { NAV_LINKS } from "../data";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 
@@ -27,7 +26,11 @@ const Navbar = () => {
        <NavLinks className="static bg-none top-0 hidden sm:inline-block"/>
       </nav>
     </header>
-    <NavLinks className={`fixed ${showBottomNav ? "top-[95vh] left-1/2 -translate-x-1/2": "top-[17px] right-5"} sm:hidden duration-200 transform z-max bg-[#11071f]`}/>
+    <NavLinks
+        className={`fixed sm:hidden z-max bg-[#11071f] 
+          ${showBottomNav ? "left-1/2 -translate-x-1/2 bottom-0" : "top-[17px] right-5"}
+          duration-0`}
+      />
    </>
   );
 };
