@@ -3,7 +3,7 @@ import { PROJECTS } from "../data";
 
 const Projects = () => {
   return (
-    <section className="py-40 px-5 md:px-20 space-y-14 text-white relative" id="projects">
+    <section className="py-40 px-5 md:px-20 space-y-14 text-white relative" id="projects" data-aos="fade-up-right" data-aos-duration={500} data-aos-delay={100}>
       <h2 className="text-2xl sm:text-3xl lg:text-4xl">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full md:w-fit z-10 justify-center items-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         {PROJECTS.map(({ name, description, image, url, className }, i) => (

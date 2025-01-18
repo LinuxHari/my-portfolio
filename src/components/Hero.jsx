@@ -13,7 +13,7 @@ const Hero = () => {
     >
       <div className="text-white py-16 xl:py-20 flex flex-col items-center gap-y-16 xl:gap-y-28">
         <div className="flex flex-col sm:flex-row justify-center gap-x-16">
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center" data-aos="fade-right" data-aos-duration={750} data-aos-delay={300}>
             <div className="bg-[#a372eb] blur-[46px] rounded-full box-content h-56 w-48 xl:h-72 xl:w-64"></div>
             <img
               src="Hero.png"
@@ -21,7 +21,7 @@ const Hero = () => {
               className="h-56 w-48 sm:h-full sm:w-full z-10 p-7 absolute inset-0  sm:left-2 top-5 -translate-x-[5%] -translate-y-[10%]"
             />
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration={750} data-aos-delay={300}>
             <div className="-translate-y-72 sm:translate-y-0 relative">
               <img
                 src="./arrow.png"
@@ -63,7 +63,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="space-y-8 md:space-y-14 min-h-[50vh] md:min-h-fit">
+        <div className="space-y-8 md:space-y-14 min-h-[50vh] md:min-h-fit" data-aos="fade-down" data-aos-duration={750} data-aos-delay={300}>
           <div className="space-y-2">
             <h1 className="text-4xl md:text-5xl xl:text-6xl">
               I am a{" "}

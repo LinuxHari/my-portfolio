@@ -2,7 +2,7 @@ import { EDUCATION } from "../data";
 
 const Education = () => {
   return (
-    <section>
+    <section data-aos="fade-up-right" data-aos-duration={500} data-aos-delay={100}>
       <div className="flex flex-col items-center gap-y-12 py-32 px-5 md:px-10 md:w-[640px] lg:w-lg">
       <h2 className="text-white text-2xl sm:text-3xl lg:text-4xl self-start sm:ml-12">My Education</h2>
         <div className="grid grid-rows-3 sm:grid-rows-2 grid-cols-7 gap-y-6 md:gap-y-5 lg:gap-y-6">

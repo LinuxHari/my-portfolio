@@ -1,7 +1,9 @@
 'use client'
 
-import React from "react";
+import { useEffect } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -15,6 +17,10 @@ const Home = () => {
   const speedProjs = windowSize < 768 ? -20 : -15;
 
   const speedSkills = windowSize < 768 ? 20 : 40;
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
     <main className="min-h-screen bg-[#11071f] overflow-hidden">
