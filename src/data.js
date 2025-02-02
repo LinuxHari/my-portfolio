@@ -22,6 +22,14 @@ export const NAV_LINKS = [
 
 export const PROJECTS = [
   {
+    name: "MERN Tours",
+    description: "A tour booking app built with Redux toolkit query, Stripe and more.",
+    image: "./badge.png",
+    url: "https://github.com/LinuxHari/MERN-grub-frontend/",
+    className:
+      "md:hover:scale-105 hover:md:border-2 duration-500 md:hover:-translate-x-5 md:hover:-translate-y-5",
+  },
+  {
     name: "MERN Grub",
     description: "A food ordering app developed with 0Auth, CI/CD and more.",
     image: "./badge.png",
@@ -30,16 +38,8 @@ export const PROJECTS = [
       "md:hover:scale-105 hover:md:border-2 duration-500 md:hover:-translate-x-5 md:hover:-translate-y-5",
   },
   {
-    name: "MERN Chat",
-    description: "A chat app developed with websockets.",
-    image: "./paper.png",
-    url: "https://github.com/LinuxHari/MERN-Chat",
-    className:
-      "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:translate-x-5 md:hover:-translate-y-5",
-  },
-  {
-    name: "MERN AI Bot",
-    description: "An AI chatbot developed with Chat-GPT API.",
+    name: "NATIVE AI Assistant",
+    description: "An AI chatbot developed with React Native and Gemini.",
     image: "./bulb.png",
     url: "https://github.com/LinuxHari/MERN-AI-Chatbot",
     className:
