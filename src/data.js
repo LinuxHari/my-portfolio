@@ -25,7 +25,7 @@ export const PROJECTS = [
     name: "MERN Tours",
     description: "A tour booking app built with Redux toolkit query, Stripe and more.",
     image: "./badge.png",
-    url: "https://github.com/LinuxHari/MERN-grub-frontend/",
+    url: "https://github.com/LinuxHari/MERN-Tour",
     className:
       "md:hover:scale-105 hover:md:border-2 duration-500 md:hover:-translate-x-5 md:hover:-translate-y-5",
   },
@@ -41,7 +41,7 @@ export const PROJECTS = [
     name: "NATIVE AI Assistant",
     description: "An AI chatbot developed with React Native and Gemini.",
     image: "./bulb.png",
-    url: "https://github.com/LinuxHari/MERN-AI-Chatbot",
+    url: "https://github.com/LinuxHari/React-Native-Voice-Assistant",
     className:
       "md:hover:scale-105 hover:md:border-2 duration-300 md:hover:-translate-x-5 md:hover:translate-y-5",
   },
