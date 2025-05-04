@@ -9,7 +9,7 @@ export const works = [{
     id: "1",
     url: "https://mern-tours.vercel.app/",
     name: "MERN Tours",
-    description: "Instant tour booking platform",
+    description: "Real-time tour booking platform",
     homeImage:  {
       // url: "https://mern-tours.vercel.app/img/hero/bg.jpeg",
       url: "MernTours.jpeg",
@@ -45,7 +45,7 @@ export const works = [{
       fileName: "",
     },
     id: "3",
-    url: "https://github.com/LinuxHari/React-Native-Voice-Assistant",
+    url: "https://expo.dev/accounts/linuxhari/projects/Arivu/builds/70484114-e0de-4e19-9009-57e0c1999e42",
     name: "Arivu AI",
     description: "AI voice companion",
     homeImage:  {

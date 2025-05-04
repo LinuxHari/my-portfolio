@@ -16,7 +16,7 @@ export default function NavbarMobile() {
   return (
     <>
       <MenuButton isOpen={isOpen} toggleMenu={toggleMenu} />
-      <NavMenu isOpen={isOpen} toggleMenu={toggleMenu} pathname={pathname} />
+      <NavMenu isOpen={isOpen} toggleMenu={toggleMenu} pathname={pathname || "/"} />
     </>
   );
 }
