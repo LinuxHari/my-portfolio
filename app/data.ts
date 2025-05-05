@@ -1,7 +1,7 @@
 
 export const works = [{
     homeLogo: {
-      url: "https://firebasestorage.googleapis.com/v0/b/mern-tours-e23a8.appspot.com/o/assets%2Flogo.png?alt=media&token=626fdce0-f733-49d0-bdcb-ea7f63b0963a",
+      url: "MernToursLogo.jpeg",
       height: 100,
       width: 200,
       fileName: "",
@@ -20,7 +20,7 @@ export const works = [{
   },
   {
     homeLogo: {
-      url: "https://mern-grub.vercel.app/mern-grub.png",
+      url: "MernGrubLogo.jpeg",
       height: 100,
       width: 200,
       fileName: "",

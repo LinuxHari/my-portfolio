@@ -32,7 +32,7 @@ const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
         }`}
       >
         <img
-          className="absolute left-small top-small z-20 h-6 md:h-8 w-auto rounded-md object-cover"
+          className="absolute left-small top-small z-20 h-20 w-auto rounded-md object-cover"
           src={work.homeLogo.url}
           alt={work.description}
           width={work.homeLogo.width}
