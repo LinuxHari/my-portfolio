@@ -39,7 +39,7 @@ export const works = [{
   },
   {
     homeLogo: {
-      url: "./ArivuLogo.png",
+      url: "./ArivuLogo.jpeg",
       height: 100,
       width: 200,
       fileName: "",
