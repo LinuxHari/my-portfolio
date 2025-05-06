@@ -1,5 +1,7 @@
+'use client'
+
 import Link from "next/link";
-import { FC, Key } from "react";
+import { FC, Key, useEffect, useState } from "react";
 import { WorkBase } from "../../type";
 import { useTheme } from "next-themes";
 
@@ -10,8 +12,15 @@ type WorkProps = {
 };
 
 const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  const { theme } = useTheme()
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const overlayClass = mounted && theme === "dark" ? "bg-black/30" : "bg-black/20";
+  const imageBrightness = mounted && theme === "dark" ? "brightness-75" : "";
 
   return (
     <Link
@@ -38,13 +47,13 @@ const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
           width={work.homeLogo.width}
           height={work.homeLogo.height}
         />
-        <div className={`absolute inset-0 z-10 rounded-lg ${theme === "dark"?"bg-black/30": "bg-black/20"}`}></div>
+        <div className={`absolute inset-0 z-10 rounded-lg ${overlayClass}`}></div>
         <div className="absolute bottom-small left-small z-20 pr-small text-light space-y-2 md:space-y-0">
           <h2 className="md:pb-smallest text-3xl font-bold">{work.name}</h2>
           <h3 className="text-xl">{work.description}</h3>
         </div>
         <img
-          className={`relative h-full w-full rounded-lg object-cover ${theme === "dark"? "brightness-75": ""}`}
+          className={`relative h-full w-full rounded-lg object-cover ${imageBrightness}`}
           src={work.homeImage.url}
           alt={work.description}
           width={work.homeImage.width}

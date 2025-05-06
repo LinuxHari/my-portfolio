@@ -1,7 +1,7 @@
 
 export const works = [{
     homeLogo: {
-      url: "MernToursLogo.jpeg",
+      url: "MernToursLogo.jpg",
       height: 100,
       width: 200,
       fileName: "",
@@ -47,7 +47,7 @@ export const works = [{
     id: "3",
     url: "https://expo.dev/accounts/linuxhari/projects/Arivu/builds/70484114-e0de-4e19-9009-57e0c1999e42",
     name: "Arivu AI",
-    description: "AI voice companion",
+    description: "An intelligent voice interface",
     homeImage:  {
       url: "/ArivuAI.jpeg",
       height: 100,
