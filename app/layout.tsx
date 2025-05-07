@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en" className={`${lato.className}`}>
       <head>
-      <link rel="icon" type="image/svg+xml" href="Logo.png" />
+      <link rel="icon" type="image/svg+xml" href="Logo.jpeg" />
       </head>
       <body
         suppressHydrationWarning
