@@ -20,7 +20,6 @@ const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
   }, []);
 
   const overlayClass = mounted && theme === "dark" ? "bg-black/30" : "bg-black/20";
-  const imageBrightness = mounted && theme === "dark" ? "brightness-75" : "";
 
   return (
     <Link
@@ -53,7 +52,7 @@ const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
           <h3 className="text-xl">{work.description}</h3>
         </div>
         <img
-          className={`relative h-full w-full rounded-lg object-cover ${imageBrightness}`}
+          className="relative h-full w-full rounded-lg object-cover"
           src={work.homeImage.url}
           alt={work.description}
           width={work.homeImage.width}
