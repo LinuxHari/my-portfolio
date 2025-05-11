@@ -2,8 +2,8 @@ import { FC } from "react";
 import Header from "./Header";
 import Text from "./Text";
 import NavbarWrapper from "../Navbar/NavbarWrapper";
-// import Showreel from "./Showreel";
-// import ShowreelMobile from "./ShowreelMobile";
+import Showreel from "./Showreel";
+import ShowreelMobile from "./ShowreelMobile";
 
 const Hero: FC = () => {
   return (
@@ -11,14 +11,14 @@ const Hero: FC = () => {
       <div data-testid="homeHeroSection" className="flex h-[100vh] flex-col" id="home">
         <Header />
         <NavbarWrapper />
-        {/* <div className="flex-grow lg:hidden">
+        <div className="flex-grow lg:hidden">
           <ShowreelMobile />
-        </div> */}
+        </div>
         <Text />
       </div>
-      {/* <div className="hidden w-full lg:block">
+      <div className="hidden w-full lg:block">
         <Showreel />
-      </div> */}
+      </div>
     </>
   );
 };

@@ -3,14 +3,14 @@ const ShowreelMobile = () => {
     <div className="relative h-full w-full flex-grow-0 p-small">
       <video
         className="h-full w-full rounded-md object-cover object-left"
-        poster="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746286656/nnagzz6ypwabqwouv7el.mp4"
+        poster="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746954398/v4qsausdfdsajffhdsalfkdadfs.mp4"
         muted
         playsInline
         autoPlay
         loop
       >
         <source
-          src="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746286656/nnagzz6ypwabqwouv7el.mp4"
+          src="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746954398/v4qsausdfdsajffhdsalfkdadfs.mp4"
           type="video/mp4"
         />
       </video>

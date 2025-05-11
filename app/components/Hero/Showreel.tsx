@@ -8,23 +8,23 @@ const Showreel = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const triggerRef = useRef<HTMLDivElement | null>(null);
 
-  useGSAP(
-    (): void => {
-      gsap.to(triggerRef.current, {
-        width: "100%",
-        ease: "sine.out",
-        duration: 1,
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "bottom bottom",
-          end: "500px",
-          scrub: 1,
-          pin: true,
-        },
-      });
-    },
-    { scope: containerRef },
-  );
+  // useGSAP(
+  //   (): void => {
+  //     gsap.to(triggerRef.current, {
+  //       width: "100%",
+  //       ease: "sine.out",
+  //       duration: 1,
+  //       scrollTrigger: {
+  //         trigger: containerRef.current,
+  //         start: "bottom bottom",
+  //         end: "500px",
+  //         scrub: 1,
+  //         pin: true,
+  //       },
+  //     });
+  //   },
+  //   { scope: containerRef },
+  // );
 
   return (
     <div>
@@ -40,12 +40,12 @@ const Showreel = () => {
             muted
           >
             <source
-              src="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746293595/ygnnlkommgaolt7i4wkm.mp4"
+              src="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746293595/l6rzpyfjqhiknhjwbo9g.mp4"
               media="(min-width: 768px)"
               type="video/mp4"
             />
             <source
-              src="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746293595/ygnnlkommgaolt7i4wkm.mp4"
+              src="https://res.cloudinary.com/dkpg8fpuv/video/upload/v1746293595/l6rzpyfjqhiknhjwbo9g.mp4"
               media="(max-width: 767px)"
               type="video/mp4"
             />
