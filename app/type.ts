@@ -10,6 +10,6 @@ export type WorkBase = {
     id: string;
     url: string;
     name: string;
-    description: string;
+    role: string;
     homeImage: Media;
   };

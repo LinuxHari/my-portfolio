@@ -42,19 +42,19 @@ const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
         <img
           className="absolute left-small top-small z-20 h-20 w-auto rounded-md object-cover"
           src={work.homeLogo.url}
-          alt={work.description}
+          alt={work.name}
           width={work.homeLogo.width}
           height={work.homeLogo.height}
         />
         <div className={`absolute inset-0 z-10 rounded-lg ${overlayClass}`}></div>
         <div className="absolute bottom-small left-small z-20 pr-small text-light space-y-2 md:space-y-0">
-          <h2 className="md:pb-smallest text-3xl font-bold">{work.name}</h2>
-          <h3 className="text-xl">{work.description}</h3>
+          <h2 className="md:pb-smallest text-3xl font-bold">{work.role}</h2>
+          <h3 className="text-xl">{work.name}</h3>
         </div>
         <img
           className="relative h-full w-full rounded-lg object-cover"
           src={work.homeImage.url}
-          alt={work.description}
+          alt={work.name}
           width={work.homeImage.width}
           height={work.homeImage.height}
         />

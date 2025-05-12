@@ -1,30 +1,30 @@
 "use client";
 
-// import { useGSAP } from "@gsap/react";
-// import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 import { useRef } from "react";
 
 const Showreel = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const triggerRef = useRef<HTMLDivElement | null>(null);
 
-  // useGSAP(
-  //   (): void => {
-  //     gsap.to(triggerRef.current, {
-  //       width: "100%",
-  //       ease: "sine.out",
-  //       duration: 1,
-  //       scrollTrigger: {
-  //         trigger: containerRef.current,
-  //         start: "bottom bottom",
-  //         end: "500px",
-  //         scrub: 1,
-  //         pin: true,
-  //       },
-  //     });
-  //   },
-  //   { scope: containerRef },
-  // );
+  useGSAP(
+    (): void => {
+      gsap.to(triggerRef.current, {
+        width: "100%",
+        ease: "sine.out",
+        duration: 1,
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "bottom bottom",
+          end: "500px",
+          scrub: 1,
+          pin: true,
+        },
+      });
+    },
+    { scope: containerRef },
+  );
 
   return (
     <div>

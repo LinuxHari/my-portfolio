@@ -9,7 +9,7 @@ export const works = [{
     id: "1",
     url: "https://mern-tours.vercel.app/",
     name: "MERN Tours",
-    description: "Real-time tour booking platform",
+    role: "Fullstack Developer",
     homeImage:  {
       // url: "https://mern-tours.vercel.app/img/hero/bg.jpeg",
       url: "MernTours.jpeg",
@@ -28,7 +28,7 @@ export const works = [{
     id: "2",
     url: "https://mern-grub.vercel.app/",
     name: "MERN Grub",
-    description: "A food ordering platform",
+    role: "Fullstack Developer",
     homeImage:  {
       // url: "https://mern-grub.vercel.app/assets/hero-pK8hUWcq.png",
       url: "MernGrub.jpeg",
@@ -47,7 +47,7 @@ export const works = [{
     id: "3",
     url: "https://expo.dev/accounts/linuxhari/projects/Arivu/builds/70484114-e0de-4e19-9009-57e0c1999e42",
     name: "Arivu AI",
-    description: "An intelligent voice interface",
+    role: "Mobile App Developer",
     homeImage:  {
       url: "/ArivuAI.jpeg",
       height: 100,
