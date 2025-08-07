@@ -52,7 +52,7 @@ const WorksSection: FC<WorksSectionProps> = ({ works }) => {
       </div>
       <div className="flex h-full w-full flex-wrap gap-5 md:gap-3" id="works">
         {works.map((work, index) => (
-          <Work work={work} key={work.id} index={index} isInHome />
+          <Work work={work} key={work.id} index={index} />
         ))}
       </div>
     </section>

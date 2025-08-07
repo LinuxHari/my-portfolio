@@ -8,10 +8,9 @@ import { useTheme } from "next-themes";
 type WorkProps = {
   work: WorkBase;
   index: Key;
-  isInHome?: boolean;
 };
 
-const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
+const Work: FC<WorkProps> = ({ work, index }) => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -26,18 +25,12 @@ const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
       href={work.url}
       key={index}
       data-testid={`homeWork${index}`}
-      className={`flex items-center justify-center h-96 md:h-[600px]  ${
-        isInHome
-          ? "z-10 w-full md:w-[calc(50%-6px)]"
-          : "h-screen w-screen p-small"
-      }`}
+      className="flex items-center justify-center h-96 md:h-[600px] z-10 w-full md:w-[calc(50%-6px)]"
       target="_blank"
     >
       <div
         id="description"
-        className={`relative z-20 ${
-          isInHome ? "h-full w-full" : "h-5/6 md:w-7/12"
-        }`}
+        className="relative z-20 h-full w-full"
       >
         <img
           className="absolute left-small top-small z-20 h-20 w-auto rounded-md object-cover"
