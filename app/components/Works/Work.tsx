@@ -26,7 +26,7 @@ const Work: FC<WorkProps> = ({ work, index, isInHome }) => {
       href={work.url}
       key={index}
       data-testid={`homeWork${index}`}
-      className={`flex items-center justify-center  ${
+      className={`flex items-center justify-center h-96 md:h-[600px]  ${
         isInHome
           ? "z-10 w-full md:w-[calc(50%-6px)]"
           : "h-screen w-screen p-small"
