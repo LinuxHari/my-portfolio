@@ -1,7 +1,13 @@
+import mernToursImg from "../public/MernTours.jpeg";
+import mernToursLogo from "../public/MernToursLogo.jpg";
+import intHuntImg from "../public/IntHunt.jpg";
+import intHuntLogo from "../public/IntHuntLogo.png";
+import resHuntImg from "../public/ResHunt.jpeg";
+import resHuntLogo from "../public/ResHuntLogo.png";
 
 export const works = [{
     homeLogo: {
-      url: "MernToursLogo.jpg",
+      url: mernToursLogo,
       height: 100,
       width: 200,
       fileName: "",
@@ -12,7 +18,7 @@ export const works = [{
     role: "Fullstack Developer",
     homeImage:  {
       // url: "https://mern-tours.vercel.app/img/hero/bg.jpeg",
-      url: "MernTours.jpeg",
+      url: mernToursImg,
       height: 100,
       width: 200,
       fileName: "",
@@ -20,7 +26,7 @@ export const works = [{
   },
   {
     homeLogo: {
-      url: "IntHuntLogo.png",
+      url: intHuntLogo,
       height: 100,
       width: 200,
       fileName: "",
@@ -31,7 +37,7 @@ export const works = [{
     role: "Fullstack Developer",
     homeImage:  {
       // url: "https://mern-grub.vercel.app/assets/hero-pK8hUWcq.png",
-      url: "IntHunt.jpg",
+      url: intHuntImg,
       height: 100,
       width: 200,
       fileName: "",
@@ -39,7 +45,7 @@ export const works = [{
   },
   {
     homeLogo: {
-      url: "ResHuntLogo.png",
+      url: resHuntLogo,
       height: 100,
       width: 200,
       fileName: "",
@@ -49,7 +55,7 @@ export const works = [{
     name: "Reshunt",
     role: "Fullstack Developer",
     homeImage:  {
-      url: "ResHunt.jpeg",
+      url: resHuntImg,
       height: 100,
       width: 200,
       fileName: "",

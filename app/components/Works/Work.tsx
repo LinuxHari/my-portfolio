@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FC, Key, useEffect, useState } from "react";
 import { WorkBase } from "../../type";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 type WorkProps = {
   work: WorkBase;
@@ -32,7 +33,7 @@ const Work: FC<WorkProps> = ({ work, index }) => {
         id="description"
         className="relative z-20 h-full w-full"
       >
-        <img
+        <Image
           className="absolute left-small top-small z-20 h-20 w-auto rounded-md object-cover"
           src={work.homeLogo.url}
           alt={work.name}
@@ -44,12 +45,13 @@ const Work: FC<WorkProps> = ({ work, index }) => {
           <h2 className="md:pb-smallest text-3xl font-bold">{work.role}</h2>
           <h3 className="text-xl">{work.name}</h3>
         </div>
-        <img
+        <Image
           className="relative h-full w-full rounded-lg object-cover"
           src={work.homeImage.url}
           alt={work.name}
           width={work.homeImage.width}
           height={work.homeImage.height}
+          loading="lazy"
         />
       </div>
     </Link>

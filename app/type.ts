@@ -1,5 +1,7 @@
+import { StaticImageData } from "next/image";
+
 export type Media = {
-    url: string;
+    url: StaticImageData;
     height: number;
     width: number;
     fileName?: string;
